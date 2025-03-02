@@ -181,7 +181,7 @@ li.active {
 }
 
 .icon {
-    font-size: 2.5rem;
+    font-size: 2rem;
     animation: fadeInUp 0.9s ease forwards infinite alternate;
 }
 
@@ -201,7 +201,7 @@ li.active {
     animation-delay: 0.6s;
 }
 
-@keyframes fadeInUp {
+/* @keyframes fadeInUp {
     0% {
         opacity: 0;
         transform: translateY(20px);
@@ -211,7 +211,7 @@ li.active {
         opacity: 1;
         transform: translateY(0);
     }
-}
+} */
 /* Hero banner end */
 #about{
     padding-top: 5rem;
@@ -378,4 +378,240 @@ li.active {
     background: #007bff;
     border-radius: 4px;
     transition: width 0.6s ease-in-out;
+}
+
+
+/* about-me css */
+
+/* General Styling */
+.dark {
+    background-color: black;
+    color: white;
+    padding: 5rem 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+.section-underline {
+    width: 100px;
+    height: 4px;
+    background-color: #3b82f6;
+    margin: 10px auto;
+    border-radius: 9999px;
+}
+
+/* Expertise Grid */
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.expertise-item {
+    background-color: #333;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.expertise-item:hover {
+    transform: scale(1.05);
+}
+
+
+.expertise-item h3 {
+    /* font-size: 1.5rem; */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.expertise-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.expertise-item li {
+    display: flex;
+    align-items: center;
+    /* font-size: 1rem; */
+    color: #d1d5db;
+    margin-bottom: 0.5rem;
+}
+
+/* Additional Services */
+.additional-services {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-item {
+    background-color: #333;
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item h3 {
+    /* font-size: 1.5rem; */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.service-item p {
+    /* font-size: 1rem; */
+    color: #d1d5db;
+}
+
+
+/* apps css */
+
+/* Apps Grid */
+.apps-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+@media (min-width: 48rem) {
+    .apps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.app-card {
+    background-color: #262626;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: transform 0.3s;
+}
+
+.app-card:hover {
+    transform: scale(1.05);
+}
+
+/* App Header */
+.app-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.app-icon {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.75rem;
+}
+
+.app-info h3 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.app-status {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.status-active {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999rem;
+}
+
+.app-price {
+    color: #9ca3af;
+}
+
+/* Features */
+.app-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.feature {
+    background-color: #404040;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+}
+
+.feature-icon {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.feature-text {
+    font-size: 0.875rem;
+    color: #d1d5db;
+}
+
+/* App Link */
+.app-link {
+    margin-top: 2rem;
+}
+
+.app-link a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #3b82f6;
+    color: white;
+    padding: 1rem;
+    border-radius: 9999rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.app-link a:hover {
+    background-color: #2563eb;
+}
+
+/* Stats Section */
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+@media (min-width: 48rem) { /* md breakpoint */
+    .stats-section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-value {
+    font-weight: 700;
+    color: #3b82f6; /* Blue-500 */
+}
+
+.stat-label {
+    color: #9ca3af; /* Gray-400 */
+    margin-top: 0.5rem;
 }
