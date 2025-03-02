@@ -1,0 +1,381 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: inter;
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* header style start */
+.logo h1 {
+    font-size: 24px;
+}
+
+header {
+    color: white;
+    background-color: #171717;
+    height: 80px;
+
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.page-width {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+ul.menu-item {
+    font-size: 16px;
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+    align-items: center;
+}
+
+li.active {
+    border-radius: 20px;
+    background-color: #3B82F6;
+    padding: 8px 16px;
+}
+
+.logo h1 span {
+    color: #3B82F6;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+    z-index: 1000;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+/* header style end */
+/* Hero banner start */
+.main-data.home-banner {
+    position: relative;
+}
+
+.developer-intro {
+    position: absolute;
+    top: 44%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 608px;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: white;
+}
+
+.main-data {
+    position: relative;
+}
+
+.home-banner {
+    background-color: #171717;
+    position: relative;
+}
+
+.developer-image img.banner-image {
+    width: 100%;
+    max-height: calc(100vh - 80px);
+    object-fit: cover;
+}
+
+.greeting,
+.developer-name {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.developer-name {
+    color: #3B82F6;
+    display: inline;
+}
+
+.developer-role {
+    display: block;
+}
+
+.last-name {
+    display: block;
+}
+
+.developer-info {
+    margin-bottom: 24px;
+}
+
+.developer-description {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.developer-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.view-work {
+    background-color: #3b82f6;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 9999px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-work:hover {
+    background-color: #2563eb;
+}
+
+.contact-button {
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
+    padding: 12px 32px;
+    border-radius: 9999px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.icon-banner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.8rem 0;
+    background-color: rgba(31, 41, 55, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.icon {
+    font-size: 2.5rem;
+    animation: fadeInUp 0.9s ease forwards infinite alternate;
+}
+
+.icon:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.icon:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.icon:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.icon:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Hero banner end */
+#about{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.section-header{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+.section-header h2{
+    margin: 0;
+}
+.section-underline{
+    background-color: #3B82F6;
+    border-radius: 999px;
+    height: 4px;
+    width: 96px;
+    margin: 1rem auto 0 auto;
+}
+.box, .skill-card {
+    background-color: white; 
+    padding: 1.5rem; 
+    border-radius: 16px; 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease-in-out; 
+}
+
+.box:hover, .skill-card {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); 
+}
+.about-grid{
+    display: flex;
+    gap: 3rem;
+}
+.about-content, .stats-experience{
+    flex: 1;
+}
+.about-content{
+    align-content: center;
+}
+.card h3{
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.card p{
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.stats-card{
+    background-color: black; 
+    padding: 2rem; 
+    border-radius: 16px; 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease-in-out; 
+}
+.stat-number{
+    color: #3B82F6;
+}
+.stat-label{
+    color: white;
+}
+.skills-grid{
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.skill-card{
+    width: calc(50% - 56px); 
+}
+.skill-card .skill-icon{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-card h4,p{
+    margin: 0
+}
+.skill-card h4{
+    font-weight: 600;
+}
+.skill-card p{
+    font-size: 0.875rem;
+}
+.stats-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stat {
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.stat:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3B82F6;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: #fff;
+}
+.expertise {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 100%;
+    width: 540px;
+    margin: 24px auto 0 auto;
+
+}
+
+.progress-bar {
+    background: white;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.progress-percent {
+    color: #007bff;
+}
+
+.progress-track {
+    width: 100%;
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #007bff;
+    border-radius: 4px;
+    transition: width 0.6s ease-in-out;
+}

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
+
+    <title>Shopify Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar page-width">
+            <div class="logo">
+                <h1>Sandip<span>.</span></h1>
+            </div>
+            <div class="menu">
+                <ul class="menu-item">
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Portfolio</li>
+                    <li class="active">Contact</li>
+                </ul>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <div class="main"  id="fullpage">
+        <section class="home-banner">
+            <div class="main-data page-width">
+                <div class="developer-image">
+                    <img src="images/home-banner.png" class="banner-image">
+                </div>
+                <div class="developer-intro">
+                    <div class="developer-info">
+                        <span class="greeting">Hi, I'm </span>
+                        <div class="developer-name">
+                            <span class="first-name">Sandip</span>
+                            <span class="last-name">Parmar</span>
+                        </div>
+                        <span class="developer-role greeting">Shopify Developer</span>
+                    </div>
+                    <div class="developer-description">
+                        <span class="description-text">Crafting tailored e-commerce solutions with custom themes, </span>
+                        <span class="description-text">apps, and optimized performance to help businesses thrive </span>
+                        <span class="description-text">online.</span>
+                    </div>
+                    <div class="developer-actions">
+                        <div class="action-button"><a href="#" class="view-work">View Work</a></div>
+                        <div class="action-button"><a href="#" class="contact-me contact-button">Contact Me</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-banner">
+                <div class="icon-container">
+                    <div class="icon animate__animated animate__fadeInUp">🛍️</div>
+                    <div class="icon animate__animated animate__fadeInUp" style="animation-delay: 0.2s">⚡</div>
+                    <div class="icon animate__animated animate__fadeInUp" style="animation-delay: 0.4s">📱</div>
+                    <div class="icon animate__animated animate__fadeInUp" style="animation-delay: 0.6s">🚀</div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-me">
+            <div class="container page-width">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+        
+                <div class="about-grid">
+                    <!-- About Content -->
+                    <div class="about-content">
+                        <div class="card box">
+                            <h3>Who I Am</h3>
+                            <p>
+                                I am a dedicated Shopify developer with a passion for creating tailored e-commerce solutions that drive business growth and enhance user experience.
+                            </p>
+                        </div>
+        
+                        <!-- Skills Cards -->
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon">🎨</div>
+                                <h4>Custom Themes</h4>
+                                <p>Unique, responsive designs</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">⚡</div>
+                                <h4>App Development</h4>
+                                <p>Custom Shopify solutions</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">🚀</div>
+                                <h4>Optimization</h4>
+                                <p>Speed &amp; SEO focused</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-icon">🔧</div>
+                                <h4>Maintenance</h4>
+                                <p>Ongoing support</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Stats & Experience -->
+                    <div class="stats-experience">
+                        <div class="stats-card">
+                            <div class="stats-grid">
+                                <div class="stat">
+                                    <div class="stat-number">2+</div>
+                                    <div class="stat-label">Years Experience</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-number">50+</div>
+                                    <div class="stat-label">Projects Completed</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-number">2</div>
+                                    <div class="stat-label">Apps Published</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-number">100%</div>
+                                    <div class="stat-label">Client Satisfaction</div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Expertise Areas -->
+                        <div class="expertise">
+                            <div class="progress-bar box">
+                                <div class="progress-header">
+                                    <span>Shopify Development</span>
+                                    <span class="progress-percent">95%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-bar box">
+                                <div class="progress-header">
+                                    <span>Custom Apps</span>
+                                    <span class="progress-percent">90%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-bar box">
+                                <div class="progress-header">
+                                    <span>Store Optimization</span>
+                                    <span class="progress-percent">85%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section id="expertise">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2>My Expertise</h2>
+                    <div class="section-underline"></div>
+                </div>
+        
+                <!-- Expertise Grid -->
+                <div class="expertise-grid">
+                    <!-- Custom Shopify Themes -->
+                    <div class="expertise-item">
+                        <div class="icon">🎨</div>
+                        <h3>Custom Shopify Themes</h3>
+                        <ul>
+                            <li>Custom Product Pages</li>
+                            <li>Blog Filters</li>
+                            <li>Image Swatches</li>
+                        </ul>
+                    </div>
+        
+                    <!-- Custom Shopify Apps -->
+                    <div class="expertise-item">
+                        <div class="icon">⚡</div>
+                        <h3>Custom Shopify Apps</h3>
+                        <ul>
+                            <li>WhatsApp Notification App</li>
+                            <li>Wishlist App</li>
+                            <li>Third-party Integrations</li>
+                        </ul>
+                    </div>
+        
+                    <!-- E-Commerce Optimization -->
+                    <div class="expertise-item">
+                        <div class="icon">🚀</div>
+                        <h3>E-Commerce Optimization</h3>
+                        <ul>
+                            <li>Speed Optimization</li>
+                            <li>SEO Implementation</li>
+                            <li>Performance Monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <!-- Additional Services -->
+                <div class="additional-services">
+                    <div class="service-item">
+                        <h3>🔄 Migration Projects</h3>
+                        <p>Seamless platform migrations with zero data loss and minimal downtime.</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <h3>🛠️ Maintenance & Support</h3>
+                        <p>Ongoing technical support and troubleshooting for smooth operations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="apps">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2>Published Apps</h2>
+                    <div class="section-underline"></div>
+                </div>
+        
+                <div class="apps-grid">
+                    <!-- WhatsApp Notification App Card -->
+                    <div class="app-card">
+                        <div class="app-header">
+                            <img src="https://cdn.shopify.com/app-store/listing_images/29a300ccda872271256a13867a5facec/icon/CMb44e7a5IcDEAE=.jpeg" alt="WhatsApp Notification App" class="app-icon">
+                            <div class="app-info">
+                                <h3>VDC WhatsApp Notification</h3>
+                                <div class="app-status">
+                                    <span class="status-active">Active</span>
+                                    <span class="app-price">$9/month</span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="app-features">
+                            <div class="feature">
+                                <span class="feature-icon">📱</span>
+                                <span class="feature-text">Order Updates</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">🔔</span>
+                                <span class="feature-text">Real-time Notifications</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">📢</span>
+                                <span class="feature-text">Bulk Messaging</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">⚡</span>
+                                <span class="feature-text">Twilio API Integration</span>
+                            </div>
+                        </div>
+        
+                        <div class="app-link">
+                            <a href="https://apps.shopify.com/whatsapp-notification-2" target="_blank">View on Shopify App Store</a>
+                        </div>
+                    </div>
+        
+                    <!-- Wishlist App Card -->
+                    <div class="app-card">
+                        <div class="app-header">
+                            <img src="https://cdn.shopify.com/app-store/listing_images/29a300ccda872271256a13867a5facec/icon/CMb44e7a5IcDEAE=.jpeg" alt="Wishlist App" class="app-icon">
+                            <div class="app-info">
+                                <h3>Wishlist App</h3>
+                                <div class="app-status">
+                                    <span class="status-active">Active</span>
+                                    <span class="app-price">Free Plan Available</span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="app-features">
+                            <div class="feature">
+                                <span class="feature-icon">❤️</span>
+                                <span class="feature-text">Wishlist Management</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">🔄</span>
+                                <span class="feature-text">Sync Across Devices</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">📊</span>
+                                <span class="feature-text">Analytics Dashboard</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">🎯</span>
+                                <span class="feature-text">Marketing Tools</span>
+                            </div>
+                        </div>
+        
+                        <div class="app-link">
+                            <a href="https://apps.shopify.com/wishlist-43" target="_blank">View on Shopify App Store</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Stats Section -->
+                <div class="stats-section">
+                    <div class="stat">
+                        <span class="stat-value">1000+</span>
+                        <span class="stat-label">Active Users</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">4.5/5</span>
+                        <span class="stat-label">Average Rating</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">24/7</span>
+                        <span class="stat-label">Support</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">2+</span>
+                        <span class="stat-label">Years Active</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Services I Offer</h2>
+                    <div class="section-underline"></div>
+                </div>
+        
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon">🎨</div>
+                        <h3>Custom Theme Development</h3>
+                        <ul>
+                            <li><span class="check-icon">✔</span> Custom Product Pages</li>
+                            <li><span class="check-icon">✔</span> Responsive Design</li>
+                            <li><span class="check-icon">✔</span> Image Swatches</li>
+                        </ul>
+                    </div>
+        
+                    <div class="service-item">
+                        <div class="service-icon">⚡</div>
+                        <h3>Custom App Development</h3>
+                        <ul>
+                            <li><span class="check-icon">✔</span> WhatsApp Integration</li>
+                            <li><span class="check-icon">✔</span> Wishlist Features</li>
+                            <li><span class="check-icon">✔</span> Third-party APIs</li>
+                        </ul>
+                    </div>
+        
+                    <div class="service-item">
+                        <div class="service-icon">🚀</div>
+                        <h3>E-Commerce Optimization</h3>
+                        <ul>
+                            <li><span class="check-icon">✔</span> Speed Optimization</li>
+                            <li><span class="check-icon">✔</span> SEO Implementation</li>
+                            <li><span class="check-icon">✔</span> Performance Monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="additional-services">
+                    <div class="service-item">
+                        <div class="service-header">
+                            <div class="service-icon">🔄</div>
+                            <h3>Migration Services</h3>
+                        </div>
+                        <p>Seamless platform migration with zero data loss and minimal downtime. Expert in transferring from various platforms to Shopify.</p>
+                    </div>
+        
+                    <div class="service-item">
+                        <div class="service-header">
+                            <div class="service-icon">🛠</div>
+                            <h3>Maintenance Services</h3>
+                        </div>
+                        <p>Ongoing support, updates, and troubleshooting to keep your Shopify store running smoothly and efficiently.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="project-process">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Project Process</h2>
+                    <div class="section-underline"></div>
+                </div>
+        
+                <div class="process-wrapper">
+                    <div class="progress-line"></div>
+        
+                    <!-- Step 1 -->
+                    <div class="process-step step-left">
+                        <div class="step-content">
+                            <span class="step-number">Step 01</span>
+                            <h3 class="step-title">Discovery & Planning</h3>
+                            <p class="step-description">Detailed discussion about your requirements, goals, and vision for the project.</p>
+                            <ul class="step-list">
+                                <li>Requirement Analysis 📋</li>
+                                <li>Project Scope Definition 🎯</li>
+                                <li>Timeline Planning ⏱️</li>
+                            </ul>
+                        </div>
+                        <div class="step-indicator">1</div>
+                    </div>
+        
+                    <!-- Step 2 -->
+                    <div class="process-step step-right">
+                        <div class="step-indicator">2</div>
+                        <div class="step-content">
+                            <span class="step-number">Step 02</span>
+                            <h3 class="step-title">Design & Development</h3>
+                            <p class="step-description">Creating the solution with regular updates and feedback integration.</p>
+                            <div class="progress-bar-group">
+                                <div class="progress-bar">
+                                    <span class="progress-label">Design Phase</span>
+                                    <div class="progress-track">
+                                        <div class="progress-fill" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <span class="progress-label">Development</span>
+                                    <div class="progress-track">
+                                        <div class="progress-fill" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Step 3 -->
+                    <div class="process-step step-left">
+                        <div class="step-content">
+                            <span class="step-number">Step 03</span>
+                            <h3 class="step-title">Testing & Optimization</h3>
+                            <p class="step-description">Comprehensive testing and performance optimization.</p>
+                            <div class="tag-group">
+                                <span class="tag">Speed Testing</span>
+                                <span class="tag">Bug Fixing</span>
+                                <span class="tag">SEO Check</span>
+                            </div>
+                        </div>
+                        <div class="step-indicator">3</div>
+                    </div>
+        
+                    <!-- Step 4 -->
+                    <div class="process-step step-right">
+                        <div class="step-indicator">4</div>
+                        <div class="step-content">
+                            <span class="step-number">Step 04</span>
+                            <h3 class="step-title">Launch & Support</h3>
+                            <p class="step-description">Smooth deployment and ongoing maintenance support.</p>
+                            <div class="icon-group">
+                                <div class="icon-box">
+                                    <span class="icon">🚀</span>
+                                    <span class="icon-label">Deployment</span>
+                                </div>
+                                <div class="icon-box">
+                                    <span class="icon">🛠️</span>
+                                    <span class="icon-label">Maintenance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Let's Work Together</h2>
+                    <div class="section-underline"></div>
+                </div>
+        
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="project">Project Type</label>
+                                <select id="project" name="project" required>
+                                    <option value="">Select Project Type</option>
+                                    <option value="theme">Custom Theme Development</option>
+                                    <option value="app">Custom App Development</option>
+                                    <option value="optimization">Store Optimization</option>
+                                    <option value="migration">Platform Migration</option>
+                                    <option value="maintenance">Maintenance & Support</option>
+                                </select>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="message">Project Details</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+        
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+        
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <div class="info-box">
+                            <h3>Contact Information</h3>
+                            <div class="info-item">
+                                <span class="icon">📧</span>
+                                <div>
+                                    <span>Email</span>
+                                    <a href="mailto:contact@example.com">contact@example.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="icon">📍</span>
+                                <div>
+                                    <span>Location</span>
+                                    <p>Ahmedabad, Gujarat, India</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="info-box">
+                            <h3>Available For</h3>
+                            <ul>
+                                <li>Freelance Projects</li>
+                                <li>Long-term Collaboration</li>
+                                <li>Consulting Services</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="footer" class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- About Section -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Sandip<span class="highlight">.</span></h3>
+                    <p class="footer-text">
+                        Specialized in creating custom Shopify solutions that help businesses grow and succeed in the digital marketplace.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="social-link">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-list">
+                        <li><a href="#about" class="footer-link">About</a></li>
+                        <li><a href="#services" class="footer-link">Services</a></li>
+                        <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Services -->
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Services</h4>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-link">Custom Theme Development</a></li>
+                        <li><a href="#" class="footer-link">App Development</a></li>
+                        <li><a href="#" class="footer-link">Store Optimization</a></li>
+                        <li><a href="#" class="footer-link">Platform Migration</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contact Info</h4>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Ahmedabad, Gujarat, India
+                        </li>
+                        <li class="footer-item">
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            contact@example.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2024 Sandip. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
