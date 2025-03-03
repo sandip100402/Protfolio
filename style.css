@@ -40,6 +40,11 @@ ul.menu-item {
     align-items: center;
 }
 
+.menu-item a{
+    color: unset;
+    text-decoration: unset;
+}
+
 li.active {
     border-radius: 20px;
     background-color: #3B82F6;
